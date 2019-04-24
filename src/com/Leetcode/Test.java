@@ -4,6 +4,7 @@ package com.Leetcode;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class WordListOrder {
@@ -11,7 +12,13 @@ class WordListOrder {
 
     @Test
     public void test140(){
+        String s = "catsanddog";
+        List<String > wordDict = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
+        List<String> strings = Solution140.wordBreak(s, wordDict);
+        for (String s1 : strings){
+            System.out.println(s1);
 
+        }
     }
 
 
